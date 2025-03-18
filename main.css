@@ -170,7 +170,7 @@ button:active {
 /* Logo Styling */
 #logo {
     display: block;
-    margin: 50px; /* Center the logo */
+    margin: 100px; /* Center the logo */
     max-width: 350px; /* Adjust the size as needed */
     height: auto; /* Keep the aspect ratio intact */
     margin-top: 100px;
