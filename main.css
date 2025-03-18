@@ -170,10 +170,10 @@ button:active {
 /* Logo Styling */
 #logo {
     display: block;
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 0 auto; /* Center the logo */
     max-width: 350px; /* Adjust the size as needed */
     height: auto; /* Keep the aspect ratio intact */
-    margin-top: 0; /* Move the logo closer to the top of the page */
+   
 }
 
 /* Styling for h1 element */
@@ -182,8 +182,7 @@ button:active {
     font-size: 2rem; /* Adjust the size of the text */
     color: white; /* Make the text white */
     text-align: center; /* Center align the text */
-    margin-top: 50px; /* Add some space between the logo and the heading */
-    margin-bottom: 10px;
+    margin-top: 10px; /* Add some space between the logo and the heading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better readability */
 }
 
