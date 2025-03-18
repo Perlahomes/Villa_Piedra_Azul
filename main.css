@@ -170,10 +170,10 @@ button:active {
 /* Logo Styling */
 #logo {
     display: block;
-    margin: 100px; /* Center the logo */
+    margin: 0 auto; /* Center the logo horizontally */
     max-width: 350px; /* Adjust the size as needed */
     height: auto; /* Keep the aspect ratio intact */
-    margin-top: 100px;
+    margin-top: 0; /* Move the logo closer to the top of the page */
 }
 
 /* Styling for h1 element */
