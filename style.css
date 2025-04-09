@@ -47,12 +47,9 @@ body::after {
     left: 1px;
     z-index: 9999;
     padding: 5px;
-    
     border: 1px solid #ccc; /* Optional border */
     border-radius: 5px; /* Optional rounded corners */
 }
-
-
 
 /* Button container */
 .button-container {
@@ -115,7 +112,6 @@ button:active {
 
 /* Footer */
 .footer {
-    background-color: #0f0f0f(0, 0, 0, 0.7); /* Optional: background for the footer */
     background-color: rgb(140, 150, 144);
     width: 100%;
     padding: 5px 0;
@@ -135,10 +131,12 @@ button:active {
     margin-top: 200px;
 }
 
-.round-btn {
+/* Box-shadow effect */
+.box-shadow {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-.round-btn:hover {
+
+.box-shadow:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -158,6 +156,7 @@ p {
     color: white;        /* Optional: ensure the text is white */
     margin-top: 5px;    /* Optional: add some spacing from the heading */
 }
+
 /* Define the animation for fade-in effect */
 .fade-in {
     opacity: 0; /* Start as invisible */
@@ -187,17 +186,31 @@ p {
     animation-duration: 3s;
 }
 
+/* Images Styling */
 .content img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the image */
-}
-
-.content img {
-    max-width: 60%; /* Adjust this value to control the maximum width of your images */
+    display: block;  /* Ensures the image is a block element */
+    margin: 20px auto;  /* Center images horizontally */
+    max-width: 80%;  /* Adjust this value to control the maximum width of your images */
     height: auto;
-    margin: 20px 0; /* Adds spacing between the images */
-    border-radius: 10px; /* Optional: Adds rounded corners to images */
+    border-radius: 15px;  /* Optional: Adds rounded corners to images */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Adds a subtle shadow around the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition on hover */
 }
 
+/* On hover, enlarge the image slightly and increase shadow for a 3D effect */
+.content img:hover {
+    transform: scale(1.05);  /* Slightly enlarge the image */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
+}
+
+/* Responsive Design for Images */
+@media (max-width: 768px) {
+    .content img {
+        max-width: 95%;  /* Allow the image to fill more of the screen on mobile */
+    }
+}
+
+/* Home Button */
 .home-button {
     position: fixed;
     top: 50px; /* Distance from the top */
@@ -206,11 +219,11 @@ p {
 }
 
 .home-button button {
-    background-color: #e0c188; /* Green background */
+    background-color: #9b9e89; /* Green background */
     color: white; /* White text */
     padding: 10px 10px; /* Some padding */
     border: none; /* No border */
-    border-radius: 100px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -218,9 +231,9 @@ p {
 
 .home-button button:hover {
     background-color: #0c0c0c; /* Darker green on hover */
-    
 }
 
+/* Social Media Icons */
 .social-media {
     margin-top: 10px;
     display: flex;
