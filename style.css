@@ -199,7 +199,7 @@ p {
 
 /* On hover, enlarge the image slightly and increase shadow for a 3D effect */
 .content img:hover {
-    transform: scale(1.05);  /* Slightly enlarge the image */
+    transform: scale(1.25);  /* Slightly enlarge the image */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
 }
 
